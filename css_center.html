@@ -103,6 +103,50 @@
         max-width: 90%;
         max-height: 90%;
     }
+    .somediv{
+        text-align: center;
+    }
+    .somediv>div{
+        display: inline-block;
+        width:20px;
+        height: 20px;
+        border: 1px solid red;
+    }
+    .flexcenter{
+        display: flex;
+        justify-content: center;
+    }
+    .flexcenter>div{
+        width:20px;
+        height: 20px;
+        border: 1px solid red;
+    }
+    .centermiddle{
+        /* position: relative; */
+    }
+    /* .centermiddle>div{
+        position: absolute;
+        width:300px;
+        height: 100px;
+        padding: 20px;
+        border: 1px solid red;
+        top:50%;
+        left: 50%;
+        margin: -70px 0 0 -170px;
+    } */
+    /* 以下方法和上面方法等同 */
+    .centermiddle>div{
+        position: absolute;
+        width:300px;
+        height: 100px;
+        padding: 20px;
+        border: 1px solid red;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    
 </style>
 <body>
 
@@ -148,6 +192,20 @@
             <h3>完全居中层1：</h3>
             <h3>开发工具【WeX5】:高性能轻架构、跨端、可视化</h3>
         </div>
+    </div>
+
+    <div class="somediv">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="flexcenter">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="centermiddle">
+        <div></div>
     </div>
     
 </body>
